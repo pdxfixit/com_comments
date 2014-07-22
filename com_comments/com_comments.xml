@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="component" method="upgrade">
+    <name>Comments</name>
+    <author>PDXfixIT</author>
+    <creationDate>August 2014</creationDate>
+    <copyright>(C) 2014 PDXfixIT. All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <authorurl>http://www.pdxfixit.com/</authorurl>
+    <version>1.0 Alpha</version>
+    <description>Commenting app for Joomla.</description>
+
+    <!-- frontend files -->
+    <files folder="components/com_comments">
+        <folder>controllers</folder>
+        <folder>views</folder>
+        <filename>dispatcher.php</filename>
+        <filename>comments.php</filename>
+        <filename>router.php</filename>
+    </files>
+
+    <!-- frontend language files -->
+    <administration>
+
+        <!-- menu links -->
+        <menu view="comments">COM_COMMENTS</menu>
+        <submenu>
+            <menu view="comments" img="../media/com_comments/images/16/comments.png">COM_COMMENTS_COMMENTS</menu>
+            <menu view="whiteips" img="../media/com_comments/images/16/whitelist.png">COM_COMMENTS_WHITEIPS</menu>
+            <menu view="blackips" img="../media/com_comments/images/16/blacklist.png">COM_COMMENTS_BLACKIPS</menu>
+            <menu view="blackemails" img="../media/com_comments/images/16/blackemails.png">COM_COMMENTS_BLACKEMAILS</menu>
+            <menu view="blackhosts" img="../media/com_comments/images/16/blackhosts.png">COM_COMMENTS_BLACKHOSTS</menu>
+        </submenu>
+
+        <!-- backend files -->
+        <files folder="administrator/components/com_comments">
+            <folder>controllers</folder>
+            <folder>fields</folder>
+            <folder>helpers</folder>
+            <folder>install</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>comments.php</filename>
+            <filename>config.xml</filename>
+            <filename>dispatcher.php</filename>
+            <filename>toolbar.php</filename>
+        </files>
+
+        <!-- backend language files -->
+        <languages folder="administrator/language">
+            <language tag="en-GB">en-GB/en-GB.com_comments.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_comments.sys.ini</language>
+        </languages>
+    </administration>
+
+    <!-- media files -->
+    <media folder="media/com_comments" destination="com_comments">
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+    </media>
+
+    <!-- install/uninstall files -->
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">install/install.sql</file>
+            <file driver="mysql">install/install.sql</file>
+            <file driver="mysqli" charset="utf8">install/install.sql</file>
+            <file driver="mysqli">install/install.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">install/uninstall.sql</file>
+            <file driver="mysql">install/uninstall.sql</file>
+            <file driver="mysqli" charset="utf8">install/uninstall.sql</file>
+            <file driver="mysqli">install/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.com_comments.ini</language>
+    </languages>
+</extension>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="settings" label="COM_COMMENTS_JCONFIG_SETTINGS_LABEL" description="COM_COMMENTS_JCONFIG_SETTINGS_DESC">
+        <field name="flood_prevention" type="text" default="300" size="30" label="COM_COMMENTS_JCONFIG_SETTINGS_FLOOD_PREVENTION_LABEL" description="COM_COMMENTS_JCONFIG_SETTINGS_FLOOD_PREVENTION_DESC" />
+    </fieldset>
+
+    <fieldset name="mollom" label="COM_COMMENTS_JCONFIG_MOLLOM_LABEL" description="COM_COMMENTS_JCONFIG_MOLLOM_DESC">
+        <field name="mollom_public_key" type="text" default="" size="30" label="COM_COMMENTS_JCONFIG_MOLLOM_PUBLIC_KEY_LABEL" description="COM_COMMENTS_JCONFIG_MOLLOM_PUBLIC_KEY_DESC" />
+        <field name="mollom_private_key" type="text" default="" size="30" label="COM_COMMENTS_JCONFIG_MOLLOM_PRIVATE_KEY_LABEL" description="COM_COMMENTS_JCONFIG_MOLLOM_PRIVATE_KEY_DESC" />
+    </fieldset>
+
+    <fieldset name="honeypot" label="COM_COMMENTS_JCONFIG_HONEYPOT_LABEL" description="COM_COMMENTS_JCONFIG_HONEYPOT_DESC">
+        <field name="honeypot_key" type="text" default="" size="30" label="COM_COMMENTS_JCONFIG_HONEYPOT_KEY_LABEL" description="COM_COMMENTS_JCONFIG_HONEYPOT_KEY_DESC" />
+    </fieldset>
+
+    <fieldset name="botscout" label="COM_COMMENTS_JCONFIG_BOTSCOUT_LABEL" description="COM_COMMENTS_JCONFIG_BOTSCOUT_DESC">
+        <field name="botscout_key" type="text" default="" size="30" label="COM_COMMENTS_JCONFIG_BOTSCOUT_KEY_LABEL" description="COM_COMMENTS_JCONFIG_BOTSCOUT_KEY_DESC" />
+    </fieldset>
+
+    <fieldset name="avatar" label="COM_COMMENTS_JCONFIG_AVATAR_LABEL" description="COM_COMMENTS_JCONFIG_AVATAR_DESC">
+        <field name="gravatar" type="list" default="1" label="COM_COMMENTS_JCONFIG_GRAVATAR_LABEL" description="COM_COMMENTS_JCONFIG_GRAVATAR_LABEL">
+            <option value="0">JNo</option>
+            <option value="1">JYes</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="notification" label="COM_COMMENTS_JCONFIG_NOTIFICATION_LABEL" description="COM_COMMENTS_JCONFIG_NOTIFICATION_DESC">
+        <field name="addresses" type="text" default="" size="30" label="COM_COMMENTS_JCONFIG_NOTIFICATION_ADDRESSES_LABEL" description="COM_COMMENTS_JCONFIG_NOTIFICATION_ADDRESSES_DESC" />
+    </fieldset>
+
+    <fieldset name="spam" label="COM_COMMENTS_JCONFIG_SPAM_LABEL" description="COM_COMMENTS_JCONFIG_SPAM_DESC">
+        <field name="user_behavior" type="list" default="1" label="COM_COMMENTS_JCONFIG_SPAM_USER_BEHAVIOR_LABEL" description="COM_COMMENTS_JCONFIG_SPAM_USER_BEHAVIOR_DESC">
+            <option value="0">COM_COMMENTS_JCONFIG_SPAM_NOTHING</option>
+            <option value="1">COM_COMMENTS_JCONFIG_SPAM_BLOCK</option>
+            <option value="2">COM_COMMENTS_JCONFIG_SPAM_DELETE</option>
+        </field>
+        <field name="ip_behavior" type="list" default="1" label="COM_COMMENTS_JCONFIG_SPAM_IP_BEHAVIOR_LABEL" description="COM_COMMENTS_JCONFIG_SPAM_IP_BEHAVIOR_DESC">
+            <option value="0">COM_COMMENTS_JCONFIG_SPAM_NOTHING</option>
+            <option value="1">COM_COMMENTS_JCONFIG_SPAM_BLACKLIST</option>
+        </field>
+        <field name="email_behavior" type="list" default="1" label="COM_COMMENTS_JCONFIG_SPAM_EMAIL_BEHAVIOR_LABEL" description="COM_COMMENTS_JCONFIG_SPAM_EMAIL_BEHAVIOR_DESC">
+            <option value="0">COM_COMMENTS_JCONFIG_SPAM_NOTHING</option>
+            <option value="1">COM_COMMENTS_JCONFIG_SPAM_BLACKLIST</option>
+            <option value="2">COM_COMMENTS_JCONFIG_SPAM_BLACKLIST_DOMAIN</option>
+        </field>
+        <field name="comment_behavior" type="list" default="2" label="COM_COMMENTS_JCONFIG_SPAM_COMMENT_BEHAVIOR_LABEL" description="COM_COMMENTS_JCONFIG_SPAM_COMMENT_BEHAVIOR_DESC">
+            <option value="0">COM_COMMENTS_JCONFIG_SPAM_NOTHING</option>
+            <option value="1">COM_COMMENTS_JCONFIG_SPAM_DISABLE</option>
+            <option value="2">COM_COMMENTS_JCONFIG_SPAM_DELETE</option>
+        </field>
+    </fieldset>
+</config>

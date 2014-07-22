@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="content" method="upgrade">
+    <name>plg_content_comments</name>
+    <author>PDXfixIT</author>
+    <creationDate>August 2014</creationDate>
+    <copyright>(C) 2014 PDXfixIT. All rights reserved.</copyright>
+    <license>GNU/GPL</license>
+    <authorurl>http://www.pdxfixit.com/</authorurl>
+    <version>1.0 Alpha</version>
+    <description>PLG_CONTENT_COMMENTS_XML_DESCRIPTION</description>
+    <files folder="plugins/content/comments">
+        <filename plugin="comments">comments.php</filename>
+    </files>
+    <languages folder="administrator/language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_comments.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_comments.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="enable_galleries" type="radio" default="0" label="PLG_CONTENT_COMMENTS_GALLERIES_LABEL" description="PLG_CONTENT_COMMENTS_GALLERIES_DESC">
+                    <option value="2">PLG_CONTENT_COMMENTS_GALLERIES_EACH_IMAGE</option>
+                    <option value="1">PLG_CONTENT_COMMENTS_GALLERIES_ENTIRE_GALLERY</option>
+                    <option value="0">JNo</option>
+                </field>
+                <field name="enable_strips" type="radio" default="0" label="PLG_CONTENT_COMMENTS_STRIPS_LABEL" description="PLG_CONTENT_COMMENTS_STRIPS_DESC">
+                    <option value="2">PLG_CONTENT_COMMENTS_STRIPS_EACH_EPISODE</option>
+                    <option value="1">PLG_CONTENT_COMMENTS_STRIPS_ENTIRE_STRIP</option>
+                    <option value="0">JNo</option>
+                </field>
+                <field name="enable_videos" type="radio" default="0" label="PLG_CONTENT_COMMENTS_VIDEOS_LABEL" description="PLG_CONTENT_COMMENTS_VIDEOS_DESC">
+                    <option value="1">JYes</option>
+                    <option value="0">JNo</option>
+                </field>
+                <field name="enable_content" type="radio" default="0" label="PLG_CONTENT_COMMENTS_CONTENT_LABEL" description="PLG_CONTENT_COMMENTS_CONTENT_DESC">
+                    <option value="1">JYes</option>
+                    <option value="0">JNo</option>
+                </field>
+                <field name="require_approval" type="radio" default="0" label="PLG_CONTENT_COMMENTS_APPROVAL_LABEL" description="PLG_CONTENT_COMMENTS_APPROVAL_DESC">
+                    <option value="1">JYes</option>
+                    <option value="0">JNo</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

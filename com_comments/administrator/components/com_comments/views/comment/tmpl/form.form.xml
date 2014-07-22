@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" label="COM_COMMENTS_COMMENT_GROUP_DETAILS" description="COM_COMMENTS_COMMENT_GROUP_DETAILS_DESC" class="span6">
+        <field name="username" type="field" label="COM_COMMENTS_COMMENT_USERNAME_TITLE" readonly="true" size="20" />
+        <field name="ip" type="field" label="COM_COMMENTS_COMMENT_IP_TITLE" size="20" readonly="true" />
+        <field name="comment" type="textarea" label="COM_COMMENTS_COMMENT_COMMENT_TITLE" />
+        <field name="enabled" type="radio" label="JSTATUS" filter="intval" size="1" default="1">
+            <option value="1">JENABLED</option>
+            <option value="0">JDISABLED</option>
+            <option value="2">COM_COMMENTS_MODERATED</option>
+            <option value="3">COM_COMMENTS_AWAITING_APPROVAL</option>
+        </field>
+        <field name="item" type="field" label="COM_COMMENTS_COMMENT_ARTICLE_TITLE" readonly="true" show_link="true" url="[ITEM:URL]" />
+        <field name="quality" type="field" label="COM_COMMENTS_COMMENT_QUALITY_TITLE" readonly="true" />
+    </fieldset>
+</form>

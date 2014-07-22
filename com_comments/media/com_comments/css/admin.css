@@ -1,0 +1,186 @@
+/* GRID SYSTEM */
+#com-comments-comment-slider {
+    padding: 10px;
+    clear: both;
+}
+
+.reporting-options {
+    float: right;
+    padding: 0 10px;
+}
+
+#comments-report-accordion h4 > span {
+    float: right;
+}
+
+/* @group Filter */
+#filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#filter ul li {
+    float: left;
+}
+
+#filter ul li.separator-right {
+    border-right: 1px solid #BBB;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#filter ul li.separator-left {
+    border-left: 1px solid #BBB;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+#filter ul li a {
+    display: block;
+    margin: 0 2px;
+    padding: 2px 7px;
+    font-weight: bold;
+    color: #363636;
+    text-transform: capitalize;
+    text-shadow: hsla(0, 0%, 100%, 0.75) 0 1px 0;
+}
+
+#filter ul li a:hover,
+#filter ul li.active a {
+    text-decoration: none;
+    background: #A0A0A0;
+    color: #FFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: hsla(0, 0%, 0%, 0.35) 0 1px 0;
+}
+
+#filter ul li.active a,
+#filter ul li a:active {
+    -webkit-box-shadow: inset hsla(0, 0%, 20%, 0.8) 0px 1px 2px, white 0 1px 0;
+    -moz-box-shadow: inset hsla(0, 0%, 20%, 0.8) 0px 1px 2px, white 0 1px 0;
+    box-shadow: inset hsla(0, 0%, 20%, 0.8) 0px 1px 2px, white 0 1px 0;
+}
+
+#filter ul li a:active {
+    background: gray;
+}
+
+/* @group comments */
+#comments-timeline {
+    float: right;
+    width: 49%;
+}
+
+.comments-list {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comments-list .comment {
+    min-height: 55px;
+    margin: 0px 0px 10px 10px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #F1F1F1;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.comments-list .comment.disabled {
+    opacity: 0.7;
+    border: 1px solid pink;
+}
+
+.comments-list .comment:before,
+.comments-list .comment:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    border-width: 0 10px 14px 0px;
+    border-style: solid;
+    border-color: transparent #F1F1F1;
+    display: block;
+    width: 0;
+}
+
+.comments-list .comment:after {
+    top: 11px;
+    left: -8px;
+    border-color: transparent #FFF;
+    display: block;
+    width: 0;
+}
+
+.comment-info {
+    float: right;
+    font-size: 11px;
+    clear: both;
+}
+
+.author {
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5em;
+    color: #666;
+    border-bottom: 0;
+}
+
+.author span {
+    display: none;
+}
+
+.active-comment {
+    background-color: #E6FFFF;
+}
+
+.comments-list .active-comment:after {
+    border-color: transparent #E6FFFF;
+}
+
+.comments-list .disabled:before {
+    border-color: transparent pink;
+}
+
+/* Spam Reports */
+#comments-reports {
+    clear: left;
+    float: left;
+    width: 49%;
+}
+
+#comments-reports .element {
+    margin: 0;
+    padding: 50px 10px 0;
+    position: relative;
+}
+
+#comments-reports .element:first-child {
+    padding-top: 0;
+}
+
+#comments-reports .element > label,
+#comments-reports .element > select,
+#comments-reports .element > time {
+    display: table-column;
+    position: absolute;
+    top: 50%;
+}
+
+#comments-reports .element > label {
+    font-weight: bold;
+    left: 10px;
+}
+
+#comments-reports .element > select,
+#comments-reports .element > time {
+    right: 10px;
+}

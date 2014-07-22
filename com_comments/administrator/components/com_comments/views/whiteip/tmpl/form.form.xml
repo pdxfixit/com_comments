@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details" label="COM_COMMENTS_WHITEIP_GROUP_DETAILS" description="COM_COMMENTS_WHITEIP_GROUP_DETAILS_DESC" class="span6">
+        <field name="ip" type="field" label="COM_COMMENTS_WHITEIP_IP_TITLE" size="20" />
+        <field name="note" type="field" label="COM_COMMENTS_WHITEIP_NOTE_TITLE" />
+    </fieldset>
+</form>
