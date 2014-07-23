@@ -5,7 +5,7 @@
         <description><![CDATA[<a href="http://www.pdxfixit.com/"><img src="http://updates.pdxfixit.com/logo.png" alt="PDXfixIT" border="0"/></a><br />Commenting app for Joomla!]]></description>
         <element>com_comments</element>
         <type>component</type>
-        <version>1.1</version>
+        <version>1.0 Alpha</version>
         <infourl title="PDXfixIT">http://www.pdxfixit.com/</infourl>
         <downloads>
             <downloadurl type="full" format="zip">http://updates.pdxfixit.com/Comments.zip</downloadurl>
