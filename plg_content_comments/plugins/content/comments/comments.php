@@ -33,15 +33,4 @@ class PlgContentComments extends JPlugin {
         }
     }
 
-    public function loadLanguage() {
-        $lang = JFactory::getLanguage();
-
-        // load the english language file
-        $lang->load('plg_content_comments', JPATH_ADMINISTRATOR, 'en-GB', true);
-        $lang->load('com_comments', JPATH_SITE, 'en-GB', true);
-
-        // load the foreign language file
-        $lang->load('plg_content_comments', JPATH_ADMINISTRATOR, $lang->getDefault(), true);
-        $lang->load('com_comments', JPATH_SITE, $lang->getDefault(), true);
-    }
 }

@@ -18,20 +18,6 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="enable_galleries" type="radio" default="0" label="PLG_CONTENT_COMMENTS_GALLERIES_LABEL" description="PLG_CONTENT_COMMENTS_GALLERIES_DESC">
-                    <option value="2">PLG_CONTENT_COMMENTS_GALLERIES_EACH_IMAGE</option>
-                    <option value="1">PLG_CONTENT_COMMENTS_GALLERIES_ENTIRE_GALLERY</option>
-                    <option value="0">JNo</option>
-                </field>
-                <field name="enable_strips" type="radio" default="0" label="PLG_CONTENT_COMMENTS_STRIPS_LABEL" description="PLG_CONTENT_COMMENTS_STRIPS_DESC">
-                    <option value="2">PLG_CONTENT_COMMENTS_STRIPS_EACH_EPISODE</option>
-                    <option value="1">PLG_CONTENT_COMMENTS_STRIPS_ENTIRE_STRIP</option>
-                    <option value="0">JNo</option>
-                </field>
-                <field name="enable_videos" type="radio" default="0" label="PLG_CONTENT_COMMENTS_VIDEOS_LABEL" description="PLG_CONTENT_COMMENTS_VIDEOS_DESC">
-                    <option value="1">JYes</option>
-                    <option value="0">JNo</option>
-                </field>
                 <field name="enable_content" type="radio" default="0" label="PLG_CONTENT_COMMENTS_CONTENT_LABEL" description="PLG_CONTENT_COMMENTS_CONTENT_DESC">
                     <option value="1">JYes</option>
                     <option value="0">JNo</option>
