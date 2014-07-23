@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.3" method="upgrade">
+    <name>Comments</name>
+    <packagename>comments</packagename>
+    <version>1.0 Alpha</version>
+    <url>http://www.pdxfixit.com/</url>
+    <packager>PDXfixIT</packager>
+    <packagerurl>http://www.pdxfixit.com/</packagerurl>
+    <description><![CDATA[<a href="http://www.pdxfixit.com/"><img src="http://updates.pdxfixit.com/logo.png" alt="PDXfixIT" border="0"/></a><br />Commenting for Joomla!]]></description>
+    <files>
+        <file type="component" id="com_comments">com_comments.zip</file>
+        <file type="plugin" group="content" id="plg_content_comments">plg_content_comments.zip</file>
+    </files>
+</extension>
